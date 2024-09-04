@@ -4,6 +4,7 @@ import sys
 
 from tkinter import  messagebox  as  MessageBox
 from tkinter import Tk
+
 #Codigo para enlazar con el archivo .spec
 def resolver_ruta(ruta_relativa):
     if hasattr(sys,'_MEIPASS'):
