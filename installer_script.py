@@ -9,14 +9,14 @@ class InstallerApp(QMainWindow):
         self.init_ui()
 
     def init_ui(self):
-        self.setWindowTitle('Shift Gamma Installer')
+        self.setWindowTitle('Anthony Installer')
         self.setGeometry(100, 100, 300, 150)
 
         # Layout principal
         layout = QVBoxLayout()
 
         # Mensaje de bienvenida
-        self.label = QLabel("Bienvenido al instalador de Shift Gamma", self)
+        self.label = QLabel("Bienvenido al instalador de Anthony", self)
         layout.addWidget(self.label)
 
         # Botón de instalación
@@ -33,7 +33,7 @@ class InstallerApp(QMainWindow):
         try:
             user_home = str(Path.home())
             excel_target_path = os.path.join(user_home, "AppData", "Roaming", "Microsoft", "AddIns")
-            access_target_path = os.path.join(user_home, "Documentos", "Shift Gamma")
+            access_target_path = os.path.join(user_home, "Documentos", "Anthony")
 
             # Archivos a copiar (debes incluir estos archivos en el directorio del instalador)
             source_excel = "resources/libro1.xlam"
